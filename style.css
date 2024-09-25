@@ -1,0 +1,23 @@
+/* Criamos para mudar os elementos da imagem */
+.Imagens-pixar{
+    width: 610px;
+    height: auto;
+    margin-top: 50px;
+}
+
+/* Centralizar os elementos */
+.Div{
+    text-align: center;
+}
+
+body{
+    
+    background-color: rgba(65,105,225);
+    h1{
+        font: 30pt Arial;
+    }
+
+    p{
+        font: 20pt bold;
+    }
+}
