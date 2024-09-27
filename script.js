@@ -1,6 +1,8 @@
 function comecar() { // Essa função esconde a página inicial e exibe o formulário do Quiz
     document.getElementById("paginaInicial").style.display = "none";
     document.getElementById("formulario").style.display = "block";
+    document.getElementById("Resultado").style.display = "none";
+    document.getElementById("descPersonagem").innerHTML = '';
 }
 
 // Captura as respostas
@@ -122,6 +124,26 @@ function calcularPontuacao() {
     imgVencedor.src = imagensPersonagens[vencedor];
     console.log("Personagem com maior pontuação é o Personagem " + (vencedor + 1) + " com " + maiorPontuacao + " pontos.");
 
+    let descricao ='';
+
+    switch(vencedor) {
+        case 0: // Merida
+            descricao = 'Você é a Merida! Assim como Mérida, <br> sua independência e espírito aventureiro caracterizam sua personalidade. <br> Você não têm medo de lutar por aquilo em que acredita e sua força de vontade inspira as pessoas ao seu redor. <br>  Não importa qual seja o obstáculo, você sempre encontra uma maneira de superá-lo com determinação. <br> Mantenha-se forte e determinado(a), nunca perdendo a vontade de encontrar e seguir o seu próprio caminho. <br> Sua coragem é seu maior tesouro!';
+            break;
+        case 1: // Sulley
+            descricao = 'Você é o Sulley!<br> Você é leal e cuidadoso(a). <br> Sempre pronto(a) para proteger e apoiar aqueles ao seu redor. Sua paciência e calma mesmo nos momentos difíceis farão de você um grande amigo. À primeira vista você pode parecer reservado(a), mas quem te conhece sabe que você tem um coração grande e está sempre disposto a ajudar. <br> Sua capacidade de manter a calma mesmo nas situações mais complexas é admirável. Continue sendo uma pessoa gentil e confiável que une as pessoas ao seu redor!';
+            break;
+        case 2: // Carl
+            descricao = 'Você é o Carl! <br> Assim como Carl, você possui uma imensa sabedoria que adquiriu ao longo da vida. <br> Embora às vezes você prefira ficar na sua zona de conforto e valorizar a paz e o sossego, sua lealdade e seu grande coração brilham quando alguém realmente precisa de você. <br> Valorize o que é importante para você e nunca desista, mesmo em tempos difíceis. <br> Sua determinação e capacidade de pensar sobre a vida fazem de você uma boa pessoa. Continue a seguir seus princípios e viva com autenticidade!';
+            break;
+        case 3: // Edna
+            descricao = 'Você é a Edna! <br> Você é uma pessoa criativa, eficiente e confiante. <br> Assim como Edna, você é uma pessoa que resolve problemas de forma rápida e direta, sem se perder em detalhes desnecessários. <br> Você tem um talento natural para a criatividade e a inovação e sempre adota uma abordagem única e elegante. <br> A confiança que têm em si  e nas suas capacidades é inspiradora. <br> Continue compartilhando suas grandes ideias com o mundo, afinal, você nasceu para brilhar!';
+            break;
+    }
+    
+    document.getElementById("descPersonagem").innerHTML = descricao;
+    document.getElementById('formulario').style.display = 'none';
+    document.getElementById('Resultado').style.display = 'block';
 }
 
 
@@ -134,6 +156,5 @@ document.querySelector("form").addEventListener("submit", function(event) {
 
     radioButtons.forEach(radio => {
         radio.checked = false; 
-        });
-   
+    });
 });
