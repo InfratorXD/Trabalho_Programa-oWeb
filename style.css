@@ -1,78 +1,84 @@
-*{
-    border: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{ /*Seletor universal, altera todo os elementos da página*/
+    border: 0; /* Elemento que adiciona uma borda em volta do HTML */
+    margin: 0; /* Define a margem (espaçamento) de um elemento externo */
+    padding: 0; /* Define o espaço entre o conteúdo de um elemento e as suas bordas */
+    box-sizing: border-box; /* Alterar padrão da propriedade da box */
 }
 
 /* Criamos para mudar os elementos da imagem */
 .Imagens-pixar{
-    width: 610px;
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    width: 610px; /* Define a largura do elemento visual */
+    height: auto; /* Define a altura de um elemento visual */
+    margin-top: 50px; /* Define o espaço acima de um elemento HTML */
+    margin-bottom: 20px; /* Define a distância do elemento para o elemento conseguinte */
 }
 
 /* Centralizar os elementos */
 .Div{
-    text-align: center;
+    text-align: center; /* Define o alinhamento horizontal do conteúdo */
 }
 
+
+/* Serve para mudar a cor e a fonte */
 body{
     
-    background-color: rgba(65,105,225);
+    background-color: rgba(65,105,225); /* Serve para mudar a cor do fundo da página */
     h1{
-        font: 30pt Arial;
+        font: 30pt Bold; /* Mudar o tamanho e a fonte das palavras */
         margin-top: 20px;
     }
 
     p{
         font: 20pt bold;
         height: auto;
-        margin-top: 25px;
+        margin-top: 25px; 
     }
 }
 
-/* botão */
+/* Elementos do botão */
 
 .button-comecar {
     width: 200px; 
     height: 200px; 
-    border-radius: 50%; 
-    overflow: hidden; 
+    border-radius: 50%; /* Serve para arredondar as bordas de um elemento HTML */
+    overflow: hidden; /* Indica ao navegador o que fazer com elementos que possuem conteúdo maior que ele próprio e o que não está sendo exibido */
     padding: 0; 
     border: none; 
-    display: block;
+    display: block; /* Define como um elemento HTML será exibido na página */
     margin: 0 auto;
 }
+
+/* Elementos da imagem do botão */
 
 .button-comecar img {
     width: 100%; 
     height: 100%;
-    object-fit: cover; 
-    border-radius: 50%; 
+    object-fit: cover; /* É usado para controlar como um objeto, como uma imagem, vídeo, iframe ou embed, deve ser redimensionado para se ajustar ao seu contêiner */ 
+    border-radius: 50%;
 }
 
 .button-comecar:hover{
-    transform: scale(1.1);
+    transform: scale(1.1); /* Permite alterações lineares em elementos HTML */
 }
 
-/* formulario */
+/* Elementos da classe "formulario" */
 
 .formulario{
     display:none;
     background-color: white;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Permite adicionar sombras ao elemento HTML */
     margin: 20px auto;
     width: 90%;
-    max-width: 600px;
+    max-width: 600px; /* Define a largura máxima do elemento HTML */
 }
 
 .formulario h2{
     margin-bottom: 15px;
     color: #333;
 }
+
+/* Elementos do form */
 
 form {
     background-color: white;
@@ -82,6 +88,8 @@ form {
     border: 0px;
     margin: 0px;
 }
+
+/* Elementos do label */
 
 .formulario label {
     width: 100%;
@@ -93,8 +101,8 @@ form {
     border-radius: 8px; 
     background-color: #f9f9f9;
     margin-bottom: 15px;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Usado para criar animações suaves no elemento HTML */
+    cursor: pointer; /* Indica o cursor do ponteiro do mouse quando está em cima de algum elemento */
 }
 
 .formulario button[type="submit"]{
@@ -110,10 +118,14 @@ form {
     transition: background-color 0.3s ease;
 }
 
+
+
 input[type="radio"]:checked + label {
     background-color: #d1e7dd;
     border-color: #0f5132;
+    color: #0f5132; 
 }
+
 
 input[type="submit"]:hover {
     background-color: #0056b3;
