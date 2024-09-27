@@ -37,6 +37,12 @@ body{
 
 /* Elementos do botão */
 
+#descPersonagem{ /* Descrição do personagem  */
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 .button-comecar {
     width: 200px; 
     height: 200px; 
