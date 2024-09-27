@@ -15,7 +15,7 @@
     <div class="Div" id="paginaInicial">
         <h1>Quem você seria no universo da Pixar?</h1>
         <p>Descubra seu personagem no universo Pixar!</p>
-        <img src="Imagens/Pixar.webp" alt="Imagem Pixar" class="Imagens-pixar">
+        <img id="personagemIdeal" src="Imagens/Pixar.webp" alt="Imagem Pixar" class="Imagens-pixar">
             <div class="BotaoStart" button id="BotaoIniciar">
                 <button class="button-comecar" onclick="comecar()"><img src="Imagens/botao-removebg-preview.png" alt=""></button>
             </div>
@@ -57,56 +57,9 @@
                 <label><input type="radio" name="questao4" value="C"> C) Sou mais reservado e espero que a pessoa se aproxime.</label><br>
                 <label><input type="radio" name="questao4" value="D"> D) Fico curioso para saber mais sobre ela.</label><br>
             </div>
-            <!-- Pergunta 5 -->
-            <h2>5. Qual é o seu passatempo favorito?</h2>
-            <div class="Quiz">
-                <label><input type="radio" name="questao5" value="A"> A) Aventuras e atividades ao ar livre.</label><br>
-                <label><input type="radio" name="questao5" value="B"> B) Passar tempo com amigos e família.</label><br>
-                <label><input type="radio" name="questao5" value="C"> C) Resolver mistérios ou enigmas.</label><br>
-                <label><input type="radio" name="questao5" value="D"> D) Criar ou construir algo.</label><br>
-            </div>
-            <!-- Pergunta 6 -->
-            <h2>6. O que você faria se tivesse que proteger algo importante?</h2>
-            <div class="Quiz">
-                <label><input type="radio" name="questao6" value="A"> A) Lutar até o fim.</label><br>
-                <label><input type="radio" name="questao6" value="B"> B) Chamaria ajuda para garantir que tudo corra bem.</label><br>
-                <label><input type="radio" name="questao6" value="C"> C) Usaria a inteligência para evitar qualquer perigo.</label><br>
-                <label><input type="radio" name="questao6" value="D"> D) Criaria uma estratégia criativa.</label><br>
-            </div>
-            <!-- Pergunta 7 -->
-            <h2>7. Qual é o seu maior medo?</h2>
-            <label><input type="radio" name="questao7" value="A"> A) Falhar quando os outros dependem de mim.</label><br>
-            <label><input type="radio" name="questao7" value="B"> B) Perder alguém que amo.</label><br>
-            <label><input type="radio" name="questao7" value="C"> C) Não ser compreendido.</label><br>
-            <label><input type="radio" name="questao7" value="D"> D) Não conseguir realizar meus sonhos.</label><br>
-    
-            <!-- Pergunta 8 -->
-            <h2>8. O que você mais valoriza?</h2>
-            <div class="Quiz">
-                <label><input type="radio" name="questao8" value="A"> A) Coragem e determinação.</label><br>
-                <label><input type="radio" name="questao8" value="B"> B) Bondade e empatia.</label><br>
-                <label><input type="radio" name="questao8" value="C"> C) Inteligência e conhecimento.</label><br>
-                <label><input type="radio" name="questao8" value="D"> D) Criatividade e originalidade.</label><br>
-            </div>
-            <!-- Pergunta 9 -->
-            <h2>9. Quais dessas profissões você escolheria?</h2>
-            <div class="Quiz">
-                <label><input type="radio" name="questao9" value="A"> A) Líder ou aventureiro.</label><br>
-                <label><input type="radio" name="questao9" value="B"> B) Professor ou conselheiro.</label><br>
-                <label><input type="radio" name="questao9" value="C"> C) Cientista ou detetive.</label><br>
-                <label><input type="radio" name="questao9" value="D"> D) Artista ou inventor.</label><br>
-            </div>
-            <!-- Pergunta 10 -->
-            <h2>10. Como você reage quando as coisas não saem como planejadas?</h2>
-            <div class="Quiz">
-                <label><input type="radio" name="questao10" value="A"> A) Dou um jeito de continuar e sigo em frente.</label><br>
-                <label><input type="radio" name="questao10" value="B"> B) Busco apoio de quem confio.</label><br>
-                <label><input type="radio" name="questao10" value="C"> C) Reflito e penso em uma solução diferente.</label><br>
-                <label><input type="radio" name="questao10" value="D"> D) Tento ver o lado positivo e aprender com o erro.</label><br>
-            </div>
-            <br>
-           <button type="submit">Enviar resposta</button>
-           
+            
+           <button type="submit" id="botaoEnviar">Enviar resposta</button>
+
     <!-- Aqui estamos puxando os arquivos do JavaScript -->
     <script src="script.js"></script>
     
@@ -114,4 +67,4 @@
     </html>
 
         </form>
-    </div>
+    </div>
