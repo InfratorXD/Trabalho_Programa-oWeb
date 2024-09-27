@@ -114,10 +114,10 @@ function calcularPontuacao() {
     var vencedor = personagens.indexOf(maiorPontuacao);
 
     var imagensPersonagens = [
-        "Imagens/Merida.jpeg",
-        "Imagens/Sulley.jpg",
-        "Imagens/Carl.jpeg",
-        "Imagens/Edna.webp",
+        "Imagens/merida.jpg",
+        "Imagens/sulley.webp",
+        "Imagens/carl.jpeg",
+        "Imagens/Edna.jfif",
     ];
 
     var imgVencedor = document.getElementById("personagemIdeal");
