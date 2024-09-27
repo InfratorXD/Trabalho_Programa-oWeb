@@ -22,7 +22,7 @@
 /* Serve para mudar a cor e a fonte */
 body{
     
-    background-color: rgba(65,105,225); /* Serve para mudar a cor do fundo da página */
+    background-color: #4169e1; /* Serve para mudar a cor do fundo da página */
     h1{
         font: 30pt Bold; /* Mudar o tamanho e a fonte das palavras */
         margin-top: 20px;
